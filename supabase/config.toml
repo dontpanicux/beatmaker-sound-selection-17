@@ -1,0 +1,21 @@
+# Supabase project configuration
+# Run: supabase link --project-ref YOUR_PROJECT_REF
+project_id = "beat-sequencer"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+
+[db.seed]
+enabled = false
+
+[functions.make-server-e44554cb]
+entrypoint = "./functions/make-server-e44554cb/index.tsx"
