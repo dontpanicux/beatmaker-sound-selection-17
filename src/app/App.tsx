@@ -321,24 +321,6 @@ export default function App() {
               {/* Right side controls */}
               <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
                 <button 
-                  onClick={handleLoadClick}
-                  className="content-stretch flex gap-[8px] items-center justify-center p-[8px] relative shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
-                >
-                  <div className="bg-[#27272a] content-stretch flex items-center p-[4px] relative rounded-[4px] shrink-0">
-                    <div aria-hidden="true" className="absolute border border-[#3f3f47] border-solid inset-0 pointer-events-none rounded-[4px]" />
-                    <div className="overflow-clip relative rounded-[4px] shrink-0 size-[20px]">
-                      <div className="absolute inset-[15.63%_7.68%]">
-                        <div className="absolute inset-[-5.45%_-4.43%]">
-                          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.4272 15.25">
-                            <path d={svgPaths.p14df6180} stroke="var(--stroke-0, #99A1AF)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p className="font-['Geist:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#f1f5f9] text-[16px]">Open Beat</p>
-                </button>
-                <button 
                   onClick={handleSaveClick}
                   className="content-stretch flex gap-[8px] items-center justify-center p-[8px] relative shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
                 >
@@ -355,6 +337,24 @@ export default function App() {
                     </div>
                   </div>
                   <p className="font-['Geist:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#f1f5f9] text-[16px]">Save Beat</p>
+                </button>
+                <button 
+                  onClick={handleLoadClick}
+                  className="content-stretch flex gap-[8px] items-center justify-center p-[8px] relative shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
+                >
+                  <div className="bg-[#27272a] content-stretch flex items-center p-[4px] relative rounded-[4px] shrink-0">
+                    <div aria-hidden="true" className="absolute border border-[#3f3f47] border-solid inset-0 pointer-events-none rounded-[4px]" />
+                    <div className="overflow-clip relative rounded-[4px] shrink-0 size-[20px]">
+                      <div className="absolute inset-[15.63%_7.68%]">
+                        <div className="absolute inset-[-5.45%_-4.43%]">
+                          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.4272 15.25">
+                            <path d={svgPaths.p14df6180} stroke="var(--stroke-0, #99A1AF)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="font-['Geist:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#f1f5f9] text-[16px]">Open Beat</p>
                 </button>
                 <button
                   onClick={handleNewBeat}
